@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>뮤지컬 예매 사이트</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 15px 30px;
+        }
+
+        footer {
+            background-color: #EBE9E8;
+            padding: 30px;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        .tabs {
+            margin-top: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .tabs span {
+            cursor: pointer;
+            font-weight: bold;
+            color: gray;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+
+        .swiper {
+            width: 100vw;
+            /* 화면 전체 너비 */
+            height: 400px;
+            margin: 0;
+            background-color: #8FAC8B;
+            padding: 30px 0;
+            box-sizing: border-box;
+            margin-left: calc(-50vw + 50%);
+            /* 왼쪽 여백 제거 */
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #ffff;
+            /* 원하는 색상으로 바꿔줘! 예: 빨간색 */
+        }
+
+        .swiper-pagination-bullet {
+            background-color: #ddd;
+            /* 회색 비활성 점 */
+            opacity: 1;
+            /* 불투명도 1로 해서 진하게 */
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #ffff;
+            /* 예: 빨간색 활성 점 */
+        }
+
+        .swiper-slide {
+            width: 280px;
+            /* 고정 크기 명시 */
+            height: 100%;
+            opacity: 0.4;
+            transform: scale(0.9);
+            transition: transform 0.5s, opacity 0.5s;
+        }
+
+        .swiper-slide-active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        header nav.navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-radius: 40px;
+            background-color: white;
+            height: 40px;
+            padding: 0 12px;
+            border: 1px solid #000;
+        }
+
+        .search-container form {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /*버튼 아이콘 가운데 정렬*/
+
+        .search-txt {
+            float: left;
+            padding: 0;
+            background: none;
+            outline: none;
+            color: #000;
+            font-size: 15px;
+            line-height: 40px;
+            height: 32px;
+            padding: 0 10px;
+            border-radius: 6px;
+            border: 1px solid white;
+            flex: 1;
+        }
+
+        .search-btn {
+            float: right;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            background: transparent;
+            /*배경색없앳다*/
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">🍿</div>
+            <ul class="menu">
+                <li>소개</li>
+                <li>뮤지컬과</li>
+                <li>영화과</li>
+                <li>예매</li>
+            </ul>
+            <div class="search-container">
+                <form action="." method="post">
+                    <input class="search-txt" type="text" placeholder="검색어를 입력해주세요" />
+                    <button class="search-btn" type="submit">
+                        <i class="fa-solid fa-magnifying-glass" style="font-size: 24px; color: black;"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="logo">🍿</div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://i.pinimg.com/736x/80/ba/16/80ba161f36421a677ccdf8cb99412a4d.jpg" alt="1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.pinimg.com/736x/28/80/cb/2880cb46ae6fd5d6d3d64f692614a7dd.jpg" alt="2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.pinimg.com/736x/eb/4f/9e/eb4f9ee63be3fa568aec15e95309fd05.jpg" alt="3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.pinimg.com/736x/af/f9/c1/aff9c18f3a71b7c9c6d2dbfb7d500ff0.jpg" alt="4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.pinimg.com/736x/d1/f0/1d/d1f01d38ab5358142d23d3f82458d611.jpg" alt="5">
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="section-title">뮤지컬과</div>
+        <div class="tabs">
+            <span>현재 상영작</span>
+            <span>상영 예정작</span>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <img src="https://cdn.ceomagazine.co.kr/news/photo/201712/1294_3799_2641.jpg" alt="CATS" />
+                <div>캣츠 CATS<br>2025.05.01~2025.05.23<br>서울예술뭐시기회관뮤지엄</div>
+            </div>
+            <div class="card">
+                <img src="https://blog.kakaocdn.net/dn/c5G3Nc/btraHrO55VV/9rY2J1UkNCxzHLnEA2BorK/img.png" alt="페드라" />
+                <div>페드라 뮤지컬<br>2025.05.01~2025.05.23<br>서울예술뭐시기회관뮤지엄</div>
+            </div>
+            <div class="card">
+                <img src="https://img.newspim.com/news/2018/11/01/1811011558557240.jpg" alt="젠틀맨스 가이드" />
+                <div>젠틀맨스 가이드<br>2025.05.01~2025.05.23<br>서울예술뭐시기회관뮤지엄</div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.dailysportshankook.co.kr/news/photo/202210/264940_264359_318.jpg" alt="오펀스" />
+                <div>연극 오펀스<br>2025.05.01~2025.05.23<br>서울예술뭐시기회관뮤지엄</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            문의 시간 > 010-xxxx-xxxx<br>
+            평일 09:00~18:00<br>
+            (주말 및 공휴일 휴무)
+        </div>
+        <div>
+            회사소개 | 이용약관 | 개인정보처리방침 | 제휴문의
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const slider = new Swiper('.swiper', {
+            loop: true,
+            loopAdditionalSlides: 5,  // 슬라이드 수 이상이야함
+            centeredSlides: true,
+            initialSlide: 0,
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+    </script>
+</body>
+
+</html>

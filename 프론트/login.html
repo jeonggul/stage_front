@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Stage_play 로그인
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    
+        <div class="login_box">
+            <img src="cwu.png" class="logo">
+            <div class="title">Stage_Play</div>
+            <div class="input_idpw">
+            <img src="id.png">
+            <input type="text" placeholder="아이디">
+            </div>
+            <div class="input_idpw">
+            <img src="pw.png">
+            <input type="password" placeholder="비밀번호">
+            </div>
+            
+            <button class="login_button">로그인</button>
+
+            <div class="login_signup">
+                <a href="#">아이디 찾기&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a> 
+                <a href="#"> 비밀번호 찾기&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a> 
+                <a href="singup.html">회원가입</a> 
+            </div>
+
+            <div class="simple">
+            <hr><span>간편 로그인</span><hr>
+            </div>
+
+            <div class="simple_button">
+                <button type="button">
+                    <img src="naver.png" >
+                </button>                
+                <button type="button">
+                    <img src="kakao.png" >
+                </button>                
+                <button type="button">
+                    <img src="google.png" >
+                </button>                
+            </div>
+            <div class="help">
+                <a href="#">*회원가입/로그인에 문제가 있어요!</a>
+            </div>
+        </div>
+    </body>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .login_box {
+            background-color: #F1EFE4;
+            padding: 40px;
+            border-radius: 24px;
+            width:350px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 135px;
+        }
+
+        .title {
+            font-family:'Krona One', sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 30px;
+        }
+
+        .input_idpw {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .input_idpw img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-80%);
+            left: 12px;
+            width: 20px;
+            height: 20px;
+
+        }
+
+        .input_idpw input {
+            width: 100%;
+            padding: 14px 14px 14px 42px;
+            box-sizing: border-box;
+            margin-bottom: 5px;
+            border-radius: 12px;
+            border: 1px solid #717171;
+            opacity: 0.6;
+        }
+
+        .login_button {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            background-color: #335938;
+            color: white;
+            font-size: 20px;
+            border-radius: 12px;
+            cursor: pointer;
+
+        }
+        .login_signup {
+            margin-bottom: 100px;
+            opacity: 0.7;
+        }
+
+        .login_signup a {
+            font-size: 12px;
+            text-decoration: none;
+            color: #767675;
+        }
+
+        .simple {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .simple hr {
+            flex: 1;
+            height: 1px;
+            color: #a8a8a8;
+        }
+
+        .simple span {
+            padding: 0 12px;
+            font-size: 15px;
+            white-space: nowrap;
+            color: #a8a8a8;
+        }
+
+        .simple_button {
+            display: flex;
+            margin: 20px 0;
+            gap: 60px;
+            justify-content: center;
+        }
+
+        .simple_button button {
+            background: none;
+            border: none;
+            padding: 0;
+            outline: none;
+        }
+
+        .simple_button img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            
+        }
+
+        .help a {
+            font-size: 12px;
+            color: #6f89f2;
+            text-decoration: none;
+        }
+
+
+    </style>
+</html>

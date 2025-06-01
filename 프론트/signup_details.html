@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Stage_play 로그인
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    
+        <div class="signup_details_box">
+            <img src="cwu.png" class="logo">
+            <div class="title">Stage_Play</div>
+
+            <div class="input_details">
+            <img src="id.png">
+            <input type="text" placeholder="아이디">
+            </div>
+            <div class="input_details">
+            <img src="pw.png">
+            <input type="password" placeholder="비밀번호">
+            </div>
+
+            <div class="input_details">
+            <img src="pw2.png">
+            <input type="password" placeholder="비밀번호 확인">
+            </div>
+
+            <div class="input_details">
+            <img src="email.png">
+            <input type="email" placeholder="이메일">
+            </div>
+
+            <div class="input_details">
+            <img src="name.png">
+            <input type="text" placeholder="이름">
+            </div>
+            
+            <!-- 번호 입력 없이도 이벤트 발생할 수 있게 했습니다.
+             필요시 말씀해주시면 수정하겠습니다. -->
+            <div>
+                <div class="title_text">휴대폰 인증하기</div>
+                <div class="number_input">
+                <img src="phone.png">
+                <input type="text" placeholder="휴대폰 번호">
+                <button type="button" class="auth_btn" id="request_btn">인증요청</button>
+                </div>
+
+                <div class="number_input hidden" id="verify_section">
+                <img src="email.png">
+                <input type="text" placeholder="인증번호">
+                <button type="button" class="auth_btn" id="auth_btn">인증확인</button>
+                </div>
+            </div>
+
+            <div class="notice">
+                · 해외 이용자는 여기를 <span class="view"><a href="#">(foreign)</a></span> 클릭 후 가입해주세요.<br />
+                · 회원가입/휴대폰 인증에 문제가 있다면 <span class="view"><a href="#">연결</a></span>을 확인해주세요.
+            </div>
+            
+
+
+            <div class="title_text">이용약관 동의</div>
+            <div class="terms_box">
+                <label class="terms_check">
+                    <input type="checkbox" id="all_agree">
+                    <span class="all_agree">전체 동의</span>
+                </label>
+                <hr>
+                <label class="terms_check">
+                    <input type="checkbox" class="agree_check">
+                    <span>만 14세 이상입니다. <span class="pilsu">(필수)</span></span>
+                </label>
+                <hr>
+                <label class="terms_check">
+                    <input type="checkbox" class="agree_check">
+                    <span>이용약관 동의 <span class="pilsu">(필수)</span></span><span class="view"><a href="#">내용보기</a></span>
+                </label>
+                <hr>
+                <label class="terms_check">
+                    <input type="checkbox" class="agree_check">
+                    <span>개인정보 수집/이용 동의 <span class="pilsu">(필수)</span></span><span class="view"><a href="#">내용보기</a></span>
+                </label>
+            </div>
+            <div class="submit_btn"><button type="submit" onclick="location.href='#'">가입완료</button></div>
+        </div>
+        <script src="myscript.js"></script>
+    </body>
+</html>

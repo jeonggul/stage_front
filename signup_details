@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Stage_play 로그인
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    
+        <div class="login_box">
+            <img src="cwu.png" class="logo">
+            <div class="title">Stage_Play</div>
+            <div class="input_idpw">
+            <img src="id.png">
+            <input type="text" placeholder="아이디">
+            </div>
+            <div class="input_idpw">
+            <img src="pw.png">
+            <input type="password" placeholder="비밀번호">
+            </div>
+
+            <div class="input_idpw">
+            <img src="pw.png">
+            <input type="password" placeholder="비밀번호 확인">
+            </div>
+
+            <div class="input_idpw">
+            <img src="pw.png">
+            <input type="password" placeholder="이메일">
+            </div>
+
+            <div class="input_idpw">
+            <img src="pw.png">
+            <input type="password" placeholder="이름">
+            </div>
+
+            <div class="auth_text">휴대폰 인증하기</div>
+            <div class="number_input">
+            <img src="phone.png">
+            <input type="text" placeholder="휴대폰 번호">
+            <button type="button" class="auth_btn">인증요청</button>
+            </div>
+
+            <!-- 인증번호 입력창 (JS 없이 구현 시 숨겨두기) -->
+            <div class="number_input verify_section active">
+            <img src="lock.png">
+            <input type="text" placeholder="인증번호">
+            <button type="button" class="auth_btn">인증확인</button>
+            </div>
+
+    
+        </div>
+    </body>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .verify_section {
+          display: none;
+        }
+
+    /* 예시용: 인증요청을 누르면 이 클래스를 제거하거나 JS로 보여줄 수 있음 */
+        .verify-section.active {
+          display: flex;
+          gap: 8px;
+          margin-bottom: 12px;
+          align-items: center;
+        }
+
+        .login_box {
+            background-color: #F1EFE4;
+            padding: 40px;
+            border-radius: 24px;
+            width:350px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 135px;
+        }
+
+        .title {
+            font-family:'Krona One', sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 30px;
+        }
+
+        .input_idpw {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .input_idpw img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-80%);
+            left: 12px;
+            width: 20px;
+            height: 20px;
+
+        }
+
+        .input_idpw input {
+            width: 100%;
+            padding: 14px 14px 14px 42px;
+            box-sizing: border-box;
+            margin-bottom: 5px;
+            border-radius: 12px;
+            border: 1px solid #717171;
+            opacity: 0.6;
+        }
+
+        .login_button {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            background-color: #335938;
+            color: white;
+            font-size: 20px;
+            border-radius: 12px;
+            cursor: pointer;
+
+        }
+        .login_signup {
+            margin-bottom: 100px;
+            opacity: 0.7;
+        }
+
+        .login_signup a {
+            font-size: 12px;
+            text-decoration: none;
+            color: #767675;
+        }
+
+        .simple {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .simple hr {
+            flex: 1;
+            height: 1px;
+            color: #a8a8a8;
+        }
+
+        .simple span {
+            padding: 0 12px;
+            font-size: 15px;
+            white-space: nowrap;
+            color: #a8a8a8;
+        }
+
+        .simple_button {
+            display: flex;
+            margin: 20px 0;
+            gap: 60px;
+            justify-content: center;
+        }
+
+        .simple_button button {
+            background: none;
+            border: none;
+            padding: 0;
+            outline: none;
+        }
+
+        .simple_button img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            
+        }
+
+        .help a {
+            font-size: 12px;
+            color: #6f89f2;
+            text-decoration: none;
+        }
+
+
+    </style>
+</html>

@@ -1,7 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-
-const router = createRouter({
+/*const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
@@ -17,7 +14,28 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
     },
+    {
+      path: '/detail',  //추가
+      name: 'detail',
+      component: () => import('../views/detail_page.vue'), //세부페이지
+    },
   ],
+})*/
+
+import { createRouter, createWebHistory } from 'vue-router'
+import Detail_page from '../views/detail_page.vue'
+
+const routes = [
+  {
+    path: '/',
+    name: 'detail_page',
+    component: Detail_page
+  }
+]
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes
 })
 
 export default router

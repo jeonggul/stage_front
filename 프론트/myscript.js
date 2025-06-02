@@ -1,4 +1,4 @@
-
+//signup_details.html
 document.getElementById('request_btn').addEventListener('click', function () {
     document.getElementById('verify_section').classList.remove('hidden');
     this.classList.add('disabled');
@@ -13,3 +13,6 @@ document.getElementById('all_agree').addEventListener('change', function () {
     const items = document.querySelectorAll('.agree_check');
     items.forEach(item => item.checked = this.checked);
 });
+
+//search_result.html
+

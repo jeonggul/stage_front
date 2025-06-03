@@ -1,8 +1,3 @@
-<script setup>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
-</script>
-
 <template>
   <div class="page">
     <Header />
@@ -72,6 +67,11 @@ import Footer from './components/Footer.vue'
     <Footer />
   </div>
 </template>
+
+<script setup>
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+</script>
 
 <style>
 html, body {

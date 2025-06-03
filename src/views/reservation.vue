@@ -1,11 +1,6 @@
-<script setup>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
-</script>
-
 <template>
   <div class="page">
-    <Header />
+    <Header/>
     <div class="layout">
       <div class="main-body">
         <div class="body-top">
@@ -21,7 +16,7 @@ import Footer from './components/Footer.vue'
             <a>이용가능 티켓</a>
             <a class="text-green font-main">10개</a>
           </div>
-          <div class="top-4"> </div>
+          <div class="top-4"></div>
         </div>
 
         <div class="body-bottom">
@@ -44,16 +39,10 @@ import Footer from './components/Footer.vue'
             </div>
           </div>
 
-
-
-
-
           <div class="bottom-right">
             <div class="right-title border-b">예매내역</div>
 
             <div class="res">
-
-
               <div class="border-a">
                 <div class="res-top border-b j-c-sb p-lr-10">
                   <p>공연 입장 대기중</p>
@@ -81,23 +70,20 @@ import Footer from './components/Footer.vue'
                   </div>
 
                 </div>
-
               </div>
-
-
             </div>
           </div>
-
-
-
-
-
         </div>
       </div>
     </div>
-    <Footer />
+    <Footer/>
   </div>
 </template>
+
+<script setup>
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+</script>
 
 <style>
 html, body {
@@ -106,75 +92,75 @@ html, body {
   padding: 0;
 }
 
-
 /*추가기능*/
-.p-lr-10{
+.p-lr-10 {
   padding: 0 10px;
 }
 
-.w-3{
+.w-3 {
   width: 30%;
 }
 
-.w-5{
+.w-5 {
   width: 50%;
 }
 
-.h-1{
+.h-1 {
   height: 10%;
 }
 
-.back-grey{
+.back-grey {
   background-color: #f2f2f2;
 }
 
-.text-green{
+.text-green {
   color: green;
 }
-.text-grey{
+
+.text-grey {
   color: grey;
 }
 
-.border-a{
+.border-a {
   border: 1px solid lightgrey;
 }
 
-.border-b{
+.border-b {
   border-bottom: 1px solid lightgrey;
 }
 
-.border-r{
+.border-r {
   border-right: 1px solid lightgrey;
 }
 
-.font-main{
+.font-main {
   font-size: larger;
   font-weight: bolder;
 }
 
-.column{ /*세로정렬*/
+.column { /*세로정렬*/
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 10px 0;
 }
 
-.d-flex{
+.d-flex {
   display: flex;
   gap: 10px;
   padding: 10px 0;
 }
 
-.t-m{
+.t-m {
   color: darkgrey;
   width: 100px;
   padding: 5px 0;
   display: flex;
   justify-content: center; /* 가로 중앙 */
-  align-items: center;     /* 세로 중앙 */
+  align-items: center; /* 세로 중앙 */
 }
 
-.j-c-sb{
+.j-c-sb {
   display: flex;
   justify-content: space-between;
 }
@@ -197,14 +183,14 @@ html, body {
   padding: 30px;
 }
 
-.body-top{
+.body-top {
   display: flex;
   justify-content: start;
   padding: 10px;
   height: 15%;
 }
 
-.top-1{
+.top-1 {
   width: 28%;
   padding: 20px;
   background-color: darkgreen;
@@ -215,7 +201,7 @@ html, body {
   flex-direction: column; /* 세로 방향 정렬 */
 }
 
-.top-2{
+.top-2 {
   width: 30%;
   padding: 20px;
   background-color: white;
@@ -223,7 +209,7 @@ html, body {
   flex-direction: column; /* 세로 방향 정렬 */
 }
 
-.top-3{
+.top-3 {
   width: 30%;
   padding: 20px;
   background-color: white;
@@ -231,7 +217,7 @@ html, body {
   flex-direction: column; /* 세로 방향 정렬 */
 }
 
-.top-4{
+.top-4 {
   width: 10%;
   padding: 20px;
   background-color: white;
@@ -239,14 +225,14 @@ html, body {
   border-top-right-radius: 10px;
 }
 
-.body-bottom{
+.body-bottom {
   display: flex;
   padding: 10px;
   gap: 20px;
   height: 70%;
 }
 
-.bottom-left{
+.bottom-left {
   width: 26%;
   padding: 20px;
   background-color: white;
@@ -255,7 +241,7 @@ html, body {
 
 }
 
-.bottom-right{
+.bottom-right {
   width: 70%;
   padding: 20px;
   background-color: white;
@@ -263,51 +249,51 @@ html, body {
   gap: 1rem;
 }
 
-.bottom-left-1{
+.bottom-left-1 {
   padding-bottom: 10px;
   height: 10%;
   justify-content: center; /* 가로 중앙 */
-  align-items: start;     /* 세로 시작 */
+  align-items: start; /* 세로 시작 */
 }
 
-.bottom-left-2{
+.bottom-left-2 {
   padding: 10px 0;
   display: flex;
   flex-direction: column; /* 세로 방향 정렬 */
-  gap: 10px;               /* 링크 사이 간격 (선택사항) */
+  gap: 10px; /* 링크 사이 간격 (선택사항) */
   height: 30%;
   justify-content: center; /* 가로 중앙 */
-  align-items: start;     /* 세로 시작 */
+  align-items: start; /* 세로 시작 */
 }
 
-.bottom-left-3{
+.bottom-left-3 {
   padding: 10px 0;
   display: flex;
   flex-direction: column; /* 세로 방향 정렬 */
-  gap: 10px;               /* 링크 사이 간격 (선택사항) */
+  gap: 10px; /* 링크 사이 간격 (선택사항) */
   height: 10%;
   justify-content: center; /* 가로 중앙 */
-  align-items: start;     /* 세로 시작 */
+  align-items: start; /* 세로 시작 */
 }
 
-.bottom-left-4{
+.bottom-left-4 {
   padding: 10px 0;
   display: flex;
   flex-direction: column; /* 세로 방향 정렬 */
-  gap: 10px;               /* 링크 사이 간격 (선택사항) */
+  gap: 10px; /* 링크 사이 간격 (선택사항) */
   height: 30%;
   justify-content: center; /* 가로 중앙 */
-  align-items: start;     /* 세로 시작 */
+  align-items: start; /* 세로 시작 */
 }
 
-.right-title{
+.right-title {
   font-size: 20px;
   padding-bottom: 10px;
   font-weight: bolder;
   height: 10%;
 }
 
-.res-button{
+.res-button {
   width: 90px;
   height: 30px;
   border: 1px solid lightgrey;

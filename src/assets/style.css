@@ -1,0 +1,287 @@
+/**공통**/
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo {
+    width: 135px;
+}
+
+.title {
+    font-family:'Krona One', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+/**공통 끝**/
+
+/**login.html, signup.html**/
+
+.login_box {
+    background-color: #F1EFE4;
+    padding: 40px;
+    border-radius: 24px;
+    width:350px;
+    text-align: center;
+}
+
+.input_idpw {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input_idpw img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    left: 12px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.input_idpw input {
+    width: 100%;
+    padding: 14px 14px 14px 42px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    border: 1px solid #717171;
+    opacity: 0.6;
+}
+
+.login_button,
+.submit_btn button {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    background-color: #335938;
+    color: white;
+    font-size: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+.login_signup {
+    margin-bottom: 100px;
+    opacity: 0.7;
+}
+
+.login_signup a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #767675;
+}
+
+.simple {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.simple hr {
+    flex: 1;
+    height: 1px;
+    color: #a8a8a8;
+}
+
+.simple span {
+    padding: 0 12px;
+    font-size: 15px;
+    white-space: nowrap;
+    color: #a8a8a8;
+}
+
+.simple_button {
+    display: flex;
+    margin: 20px 0;
+    gap: 60px;
+    justify-content: center;
+}
+
+.simple_button button {
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+.simple_button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.help a {
+    font-size: 12px;
+    color: #6f89f2;
+    text-decoration: none;
+}
+
+/**login.html, signup.html 끝**/
+
+
+
+/**signup_details.html**/
+
+.signup_details_box {
+    background-color: white;
+    border: 1px solid #335938;
+    padding: 40px;
+    border-radius: 24px;
+    width:350px;
+    text-align: center;
+}
+
+.input_details {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input_details img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    left: 12px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.input_details input {
+    width: 100%;
+    padding: 14px 14px 14px 42px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    border: 1px solid #717171;
+    opacity: 0.6;
+}
+
+.title_text {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.notice {
+    font-size: 9px;
+    background: #F1EFE4;
+    padding: 8px;
+    border-radius: 6px;
+    color:#a8a8a8;
+    margin: 12px 0;
+    text-align: left;
+}
+
+.terms_box {
+    background: #F1EFE4;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.terms_box hr {
+    width: 90%;
+    height: 1px;
+    color: #a8a8a8;
+    opacity: 0.6;
+}
+
+.terms_box label.terms_check {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 9px;
+    color: #a8a8a8;
+}
+
+.pilsu {
+    font-size: 9px;
+    color: #335938;
+}
+
+.view {
+    display: inline;
+    margin-left: auto;
+    font-size: 11px;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.view a {
+    color: #a8a8a8;
+    text-decoration: none;
+}
+
+.auth_btn {
+    padding: 10px 20px;
+    background-color: #335938;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.verify_section {
+    display: none;
+}
+
+.verify-section.active {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+
+.number_input {
+    display: flex;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.number_input img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    left: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.number_input input {
+    width: 100%;
+    padding: 14px 14px 14px 42px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    border: 1px solid #717171;
+    opacity: 0.6;
+}
+
+.hidden {
+    display: none;
+}
+
+.auth_btn.disabled {
+    background-color: #767675 !important;
+    cursor: not-allowed;
+    color: white;
+}

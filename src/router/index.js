@@ -7,8 +7,8 @@ import search_result from '@/views/search_result.vue'
 import detail_page from '../views/detail_page.vue'
 
 const routes = [
-  {path: '/', redirect: '/main_project'},
-  {path: '/main_project', component: main_project},
+//  {path: '/', redirect: '/'},
+  {path: '/', component: main_project},
   {path: '/login', component: login},
   {path: '/signup', component: signup},
   {path: '/signup_details', component: signup_details},

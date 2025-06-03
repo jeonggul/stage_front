@@ -44,50 +44,28 @@ import Footer from './components/Footer.vue'
             </div>
           </div>
 
-
-
-
-
           <div class="bottom-right">
             <div class="right-title border-b">상세내역</div>
 
-            <div class="res">
+            <div class="d-flex border-b">
+              <a class="t-m">티켓명</a>
+              <a>The 오펀스</a>
+            </div>
 
+            <div class="d-flex border-b">
+              <a class="t-m">예매상태</a>
+              <a>입금기한초과</a>
+            </div>
 
-              <div class="border-a">
-                <div class="res-top border-b j-c-sb p-lr-10">
-                  <p>입금기한초과</p>
-                  <p>2025-05-30</p>
-                </div>
-
-                <div class="res-bottom d-flex j-c-sb p-lr-10">
-                  <img class="w-2" src="">
-
-                  <div class="w-5">
-                    <p>The 오펀스</p>
-                    <p class="text-grey">4.24(목) 13:00</p>
-                    <p>총 1매</p>
-
-                    <div>
-                      <p>입금기간이 초과되어 자동 취소된 티켓입니다.</p>
-                    </div>
-
-                  </div>
-
-                  <div class="res-button">
-                    <a>상세내역</a>
-                  </div>
-
-                </div>
-
+            <div class="d-flex">
+              <a class="t-m">옵션</a>
+              <div class="column">
+                <a>4.25(목) 13:00</a>
+                <a>총 1매</a>
+                <a>1234-56-7890</a>
               </div>
-
-
             </div>
           </div>
-
-
-
         </div>
       </div>
     </div>
@@ -101,44 +79,10 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
-
 /*추가기능*/
-.p-lr-10{
-  padding: 0 10px;
-}
-
-.w-2{
-  width: 20%;
-}
-
-.w-3{
-  width: 30%;
-}
-
-.w-5{
-  width: 50%;
-}
-
-.h-1{
-  height: 10%;
-}
-
-.back-grey{
-  background-color: #f2f2f2;
-}
-
 .text-green{
   color: green;
 }
-.text-grey{
-  color: grey;
-}
-
-.border-a{
-  border: 1px solid lightgrey;
-}
-
 .border-b{
   border-bottom: 1px solid lightgrey;
 }
@@ -172,11 +116,6 @@ html, body {
   display: flex;
   justify-content: center; /* 가로 중앙 */
   align-items: center;     /* 세로 중앙 */
-}
-
-.j-c-sb{
-  display: flex;
-  justify-content: space-between;
 }
 
 /*메인css*/
@@ -243,7 +182,7 @@ html, body {
   display: flex;
   padding: 10px;
   gap: 20px;
-  height: 70%;
+  height: 75%;
 }
 
 .bottom-left{
@@ -305,14 +244,5 @@ html, body {
   padding-bottom: 10px;
   font-weight: bolder;
   height: 10%;
-}
-
-.res-button{
-  width: 90px;
-  height: 30px;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  background-color: #f8f8f8;
-  text-align: center;
 }
 </style>

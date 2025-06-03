@@ -49,27 +49,29 @@ import Footer from './components/Footer.vue'
 
 
           <div class="bottom-right">
-            <div class="right-title border-b">상세내역</div>
+            <div class="right-title border-b">예매내역</div>
 
             <div class="res">
 
 
               <div class="border-a">
                 <div class="res-top border-b j-c-sb p-lr-10">
-                  <p>입금기한초과</p>
+                  <p>공연 입장 대기중</p>
                   <p>2025-05-30</p>
                 </div>
 
                 <div class="res-bottom d-flex j-c-sb p-lr-10">
-                  <img class="w-2" src="">
+                  <img class="w-3" src="">
 
                   <div class="w-5">
                     <p>The 오펀스</p>
                     <p class="text-grey">4.24(목) 13:00</p>
                     <p>총 1매</p>
 
-                    <div>
-                      <p>입금기간이 초과되어 자동 취소된 티켓입니다.</p>
+                    <div class="back-grey">
+                      <p>공연취소 내용 1</p>
+                      <p>공연취소 내용 2</p>
+                      <p>공연취소 내용 3</p>
                     </div>
 
                   </div>
@@ -85,6 +87,8 @@ import Footer from './components/Footer.vue'
 
             </div>
           </div>
+
+
 
 
 
@@ -106,10 +110,6 @@ html, body {
 /*추가기능*/
 .p-lr-10{
   padding: 0 10px;
-}
-
-.w-2{
-  width: 20%;
 }
 
 .w-3{

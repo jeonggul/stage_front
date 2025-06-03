@@ -49,7 +49,7 @@ import Footer from './components/Footer.vue'
 
 
           <div class="bottom-right">
-            <div class="right-title border-b">상세내역</div>
+            <div class="right-title border-b">취소/환불내역</div>
 
             <div class="res">
 

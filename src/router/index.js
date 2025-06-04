@@ -9,7 +9,7 @@ import cancel_page from '@/views/cancel.vue'
 import default_page from '@/views/default.vue'
 import detail_page2 from '@/views/detail.vue'
 import reservation_page from '@/views/reservation.vue'
-
+import signup_details_foreign from '@/views/signup_details_foreign.vue'
 
 const routes = [
   {path: '/', component: main_project}, // 메인페이지
@@ -21,7 +21,9 @@ const routes = [
   {path: '/cancel',  component: cancel_page},
   {path: '/default',  component: default_page},
   {path: '/detail',  component: detail_page2},
-  {path: '/reservation',  component: reservation_page}
+  {path: '/reservation',  component: reservation_page},
+   {path:'/signup_details_foreign', component: signup_details_foreign}
+
 ]
 
 const router = createRouter({

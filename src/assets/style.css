@@ -186,6 +186,8 @@ body {
     text-align: left;
 }
 
+
+
 .terms_box {
     background: #F1EFE4;
     border-radius: 10px;
@@ -210,21 +212,44 @@ body {
     color: #a8a8a8;
 }
 
+.agree_check {
+    display: flex;
+}
+
 .pilsu {
     font-size: 9px;
     color: #335938;
 }
 
-.view {
+.notice_view {
     display: inline;
-    margin-left: auto;
-    font-size: 11px;
-    text-decoration: underline;
+    font-size: 9px;
+    text-decoration: none;
     cursor: pointer;
+    letter-spacing: normal;
+}
+
+.notice_view a, router-link{
+    display: inline;
+    color: #a8a8a8;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    letter-spacing: normal;
+    word-spacing: 0;
+    white-space: 0;
 
 }
 
-.view a {
+.check_view {
+    display: inline;
+    margin-left: auto;
+    font-size: 9px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.check_view a {
     color: #a8a8a8;
     text-decoration: none;
 }

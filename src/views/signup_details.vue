@@ -40,8 +40,8 @@
     </div>
 
     <div class="notice">
-      · 해외 이용자는 여기를 <span class="view"><a href="#">(foreign)</a></span> 클릭 후 가입해주세요.<br />
-      · 회원가입/휴대폰 인증에 문제가 있다면 <span class="view"><a href="#">연결</a></span>을 확인해주세요.
+     <span class="notice_view"> · 해외 이용자는 <router-link to="/signup_details_foreign">여기(foreign)</router-link>를 클릭 후 가입해주세요.<br /></span>
+      <span class="notice_view"> · 회원가입/휴대폰 인증에 문제가 있다면 <a href="#">연결</a>을 확인해주세요.</span>
     </div>
 
     <div class="title_text">이용약관 동의</div>
@@ -58,12 +58,12 @@
       <hr />
       <label class="terms_check">
         <input type="checkbox" class="agree_check" />
-        <span>이용약관 동의 <span class="pilsu">(필수)</span></span><span class="view"><a href="#">내용보기</a></span>
+        <span>이용약관 동의 <span class="pilsu">(필수)</span></span><span class="check_view"><a href="#">내용보기</a></span>
       </label>
       <hr />
       <label class="terms_check">
         <input type="checkbox" class="agree_check" />
-        <span>개인정보 수집/이용 동의 <span class="pilsu">(필수)</span></span><span class="view"><a href="#">내용보기</a></span>
+        <span>개인정보 수집/이용 동의 <span class="pilsu">(필수)</span></span><span class="check_view"><a href="#">내용보기</a></span>
       </label>
     </div>
 

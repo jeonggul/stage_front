@@ -73,28 +73,22 @@
       </div>
     </div>
   </div>
+
 </template>
 
-<script>
-export default {
-  name: "search_result",
-  data() {
-    return {
-      cats: new URL('@/assets/images/cats.jpeg', import.meta.url).href,
-      fedora: new URL('@/assets/images/fedora.jpg', import.meta.url).href,
-      gentlemans: new URL('@/assets/images/gentlemans.png', import.meta.url).href,
-      orphans: new URL('@/assets/images/orphans.jpeg', import.meta.url).href,
-      ellen: new URL('@/assets/images/ellen.jpg', import.meta.url).href,
-      anne: new URL('@/assets/images/anne.jpg', import.meta.url).href,
+<script setup>
+const cats = new URL('@/assets/images/cats.jpeg', import.meta.url).href
+const fedora = new URL('@/assets/images/fedora.jpg', import.meta.url).href
+const gentlemans = new URL('@/assets/images/gentlemans.png', import.meta.url).href
+const orphans = new URL('@/assets/images/orphans.jpeg', import.meta.url).href
+const ellen = new URL('@/assets/images/ellen.jpg', import.meta.url).href
+const anne = new URL('@/assets/images/anne.jpg', import.meta.url).href
 
-      frida: new URL('@/assets/images/frida.jpg', import.meta.url).href,
-      frankenstein: new URL('@/assets/images/frankenstein.png', import.meta.url).href,
-      rebecca: new URL('@/assets/images/rebecca.jpg', import.meta.url).href,
-      bballae: new URL('@/assets/images/bballae.jpg', import.meta.url).href,
-      love: new URL('@/assets/images/love.jpeg', import.meta.url).href
-    }
-  }
-}
+const frida = new URL('@/assets/images/frida.jpg', import.meta.url).href
+const frankenstein = new URL('@/assets/images/frankenstein.png', import.meta.url).href
+const rebecca = new URL('@/assets/images/rebecca.jpg', import.meta.url).href
+const bballae = new URL('@/assets/images/bballae.jpg', import.meta.url).href
+const love = new URL('@/assets/images/love.jpeg', import.meta.url).href
 </script>
 
 <style>

@@ -43,24 +43,17 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'login',
-  data() {
-    return {
-      cwuimage: new URL('@/assets/images/cwu.png', import.meta.url).href,
-      idimage: new URL('@/assets/images/id.png', import.meta.url).href,
-      pwimage: new URL('@/assets/images/pw.png', import.meta.url).href,
-      naverimage: new URL('@/assets/images/naver.png', import.meta.url).href,
-      kakaoimage: new URL('@/assets/images/kakao.png', import.meta.url).href,
-      googleimage: new URL('@/assets/images/google.png', import.meta.url).href
-    }
-  },
-  methods: {
-    login() {
-      alert("로그인 버튼 동작 테스트")
-    }
-  }
+<script setup>
+// 이미지 경로 상수를 정의합니다.
+const cwuimage = new URL('@/assets/images/cwu.png', import.meta.url).href
+const idimage = new URL('@/assets/images/id.png', import.meta.url).href
+const pwimage = new URL('@/assets/images/pw.png', import.meta.url).href
+const naverimage = new URL('@/assets/images/naver.png', import.meta.url).href
+const kakaoimage = new URL('@/assets/images/kakao.png', import.meta.url).href
+const googleimage = new URL('@/assets/images/google.png', import.meta.url).href
+
+function login() {
+  alert('로그인 버튼 동작 테스트')
 }
 </script>
 

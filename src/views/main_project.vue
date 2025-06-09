@@ -177,11 +177,6 @@ onMounted(() => {
   </div>
 </template>
 
-<script>
-export default {
-  name: 'main_project',
-};
-</script>
 
 <style scoped>
 .swiper {
